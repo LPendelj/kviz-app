@@ -1,0 +1,14 @@
+<div class="main-container">
+  <div class="headline">
+    <h1>Baronija kviz</h1>
+  </div>
+  <div class="start-game">
+    <button [disabled]="!playersSelected">Zapocni igru</button>
+  </div>
+  <div class="players">
+    <label for="playersNumber">Odaberi broj igraca:</label>
+    <select name="playersNumber" id="playersNumber" [(ngModel)]="playersNumber"  (change)="checkPlayersNumber($event)">
+      <option *ngFor="let item of playersArray" [ngValue]="item">{{item}}</option>
+    </select>
+  </div>
+</div>

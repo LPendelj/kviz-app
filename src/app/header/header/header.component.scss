@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+*{
+  margin: 0;
+}
+
+.main-container{
+  background-color: $base-color;
+  height: 50px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+li{
+  list-style: none;
+}
